@@ -72,10 +72,21 @@ public class Main {
 
 
 //      ======================CheckBox========================
-        UIControl[] controls = {new TextBox(), new CheckBox()};
-        for (var control: controls) {
-            control.render();
-        }
+//        UIControl[] controls = {new TextBox(), new CheckBox()};
+//        for (var control: controls) {
+//            control.render();
+//        }
+//      ======================================================
+
+
+//      ====================TAX CALCULATOR====================
+        var calculator = new TaxCalculator2020(20_000);
+        var report = new TaxReport(calculator);
+        report.show();
+
+        report.setCalculator(new TaxCalculator2021());
+        report.show();
+
     }
 
     public static void show(UIControl control) {
