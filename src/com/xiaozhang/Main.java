@@ -81,12 +81,9 @@ public class Main {
 
 //      ====================TAX CALCULATOR====================
         var calculator = new TaxCalculator2020(20_000);
-        var report = new TaxReport(calculator);
-        report.show();
-
-        report.setCalculator(new TaxCalculator2021());
-        report.show();
-
+        var report = new TaxReport();
+        report.show(calculator);
+        report.show(new TaxCalculator2021());
     }
 
     public static void show(UIControl control) {
