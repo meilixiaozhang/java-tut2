@@ -1,8 +1,10 @@
 package com.xiaozhang;
 
-public class CheckBox extends UIControl{
+//final classes cannot be extended
+public final class CheckBox extends UIControl{
     @Override
     public void render() {
         System.out.println("Render CheckBox");
     }
 }
+

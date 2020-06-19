@@ -9,7 +9,8 @@ public abstract class UIControl extends Object {
 
     public abstract void render(); // only declaration but no implementation
 
-    public void enable() {
+    //final methods cannot be overwritten
+    public final void enable() {
         isEnabled = true;
     }
 
