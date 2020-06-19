@@ -1,15 +1,13 @@
 package com.xiaozhang;
 
-public class UIControl extends Object {
+public abstract class UIControl extends Object {
     protected boolean isEnabled = true;
 
 //    public UIControl(boolean isEnabled) {
 //        this.isEnabled = isEnabled();
 //    }
 
-    public void render() {
-
-    }
+    public abstract void render(); // only declaration but no implementation
 
     public void enable() {
         isEnabled = true;
