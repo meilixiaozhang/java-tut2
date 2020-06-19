@@ -3,9 +3,12 @@ package com.xiaozhang;
 public class UIControl extends Object {
     protected boolean isEnabled = true;
 
-    public UIControl(boolean isEnabled) {
-        this.isEnabled = isEnabled();
-        System.out.println("UI Control");
+//    public UIControl(boolean isEnabled) {
+//        this.isEnabled = isEnabled();
+//    }
+
+    public void render() {
+
     }
 
     public void enable() {

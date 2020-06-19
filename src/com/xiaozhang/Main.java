@@ -17,6 +17,7 @@ public class Main {
 //        System.out.println(textBox1.text); // Hello World
 //      =====================================================
 
+
 //      ===================Employee==========================
 //        var employee = new Employee(
 //                50_000, 20);
@@ -24,6 +25,7 @@ public class Main {
 //        int wage = employee.calculateWage(0);
 //        System.out.println(wage);
 //      =====================================================
+
 
 //      =================MORTGAGE CALCULATOR=================
 //        int principal = (int) Console.readNumber("Principal: ", 1000, 1_000_000);
@@ -36,6 +38,7 @@ public class Main {
 //        report.printMortgage();
 //        report.printPaymentSchedule();
 //      =====================================================
+
 
 //      =====================UI CONTROL======================
 //        var control = new TextBox();
@@ -58,12 +61,21 @@ public class Main {
 //        show(textBox);
 //      ======================================================
 
+
 //      =======================Point==========================
-        var point1 = new Point(1,2);
-        var point2 = new Point(1,2);
-        System.out.println(point1.equals(point2));
-        System.out.println(point1.hashCode());
-        System.out.println(point2.hashCode());
+//        var point1 = new Point(1,2);
+//        var point2 = new Point(1,2);
+//        System.out.println(point1.equals(point2));
+//        System.out.println(point1.hashCode());
+//        System.out.println(point2.hashCode());
+//      ======================================================
+
+
+//      ======================CheckBox========================
+        UIControl[] controls = {new TextBox(), new CheckBox()};
+        for (var control: controls) {
+            control.render();
+        }
     }
 
     public static void show(UIControl control) {
